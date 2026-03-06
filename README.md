@@ -1,29 +1,48 @@
-(velara.cc)<script>
-    launch();
+<!-- Ultimate Game Stash file--> 
+<!-- For the regularly updating doc go to https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/ -->
 
-    function launch() {
-      try {
-        fetch("https://cdn.jsdelivr.net/gh/gn-math/gn-math-DONTDMCA@main/singlefile.html?t="+Date.now())
-          .then(response => response.text())
-          .then(html => {
-                document.documentElement.innerHTML = html;
 
-                document.documentElement.querySelectorAll('script').forEach(oldScript => {
-                    const newScript = document.createElement('script');
-                    if (oldScript.src) {
-                        newScript.src = oldScript.src;
-                    } else {
-                        newScript.textContent = oldScript.textContent;
-                    }
-                    document.body.appendChild(newScript);
-                });
-          });
-      } catch (error) {
-        console.error('error:', error);
-      }
-    }
 
-  </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5521219086088837"
-     crossorigin="anonymous"></script>
-                                    
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Boxing Random" />
+<Content type="html"><![CDATA[
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Boxing Random</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Scirra Construct">
+	<meta name="author" content="TwoPlayerGames">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxstyle.css" type="text/css">
+
+</head>
+<body>
+
+<script>
+if (location.protocol.substr(0, 4) ==="file")
+{
+	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
+}
+</script>
+	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxwasm.js"></script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxcheck.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxclient.js" type="module"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxmain.js" type="module"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxsw.js" type="module"></script>
+</body>
+</html>
+
+</Content>
+</Module>            
