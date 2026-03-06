@@ -3,46 +3,45 @@
 
 
 
-
-<?xml version="1.0" encoding="UTF-8" ?>
-<Module>
-<ModulePrefs title="Boxing Random" />
-<Content type="html"><![CDATA[
-
-<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Boxing Random</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
-<meta name="generator" content="Scirra Construct">
-	<meta name="author" content="TwoPlayerGames">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxstyle.css" type="text/css">
-
+	<meta charset="UTF-8">
+	<title>Basket Random</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="generator" content="Construct 3">
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/style.css"
+		type="text/css">
+	<script>
+		window.addEventListener("keydown", function(e) { // space and arrow keys if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false); 
+	</script>
 </head>
-<body>
 
-<script>
-if (location.protocol.substr(0, 4) ==="file")
-{
-	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
-}
-</script>
-	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxwasm.js"></script>
-	<noscript>
+<body>
+	<div id="fb-root"></div>
+	<script
+		src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/box2d.js">
+	</script> <noscript>
 		<div id="notSupportedWrap">
 			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
 			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
 		</div>
 	</noscript>
-	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxcheck.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxclient.js" type="module"></script>
-	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxmain.js" type="module"></script>
-	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@25f6152ab54ec5409c832c904ed3e5e482600d6a/boxsw.js" type="module"></script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/suppoortcheck.js">
+	</script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/offclient.js"
+		type="module"></script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/main.js"
+		type="module"></script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/registersw.js"
+		type="module"></script>
+	<script src="https://cdn.jsdelivr.net/gh/bubbls/ruffle@1520d90d7b2994737acd8f7a633d018f63c22ca7/api.js"></script>
 </body>
-</html>
 
-</Content>
-</Module>            
+</html>            
